@@ -15,6 +15,14 @@ a{
 
 /* HEADER */
 
+.ny{
+    color: #FC3D32;
+}
+
+.fitia{
+    color: #007E3A;
+}
+
 .header-nav{
     text-align: center;
 }
@@ -33,12 +41,34 @@ header{
 }
 
 .header-1{
-    padding-top: 5px;
-    width: 15%;
+    width: 130px;
     float: left;
     display: inline-block;
     text-align: left;
-    margin-left: 30px;
+    margin-left: 15px;
+    background-color: #FEF9DC;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.header-1 p{
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    transition-property: all;
+    transition-duration: 0.1s;
+}
+
+.header-1 img{
+    float: left;
+    padding: 5px 5px 0 5px;
+    display: inline-block;
+    height: 30px;
+}
+
+.header-1 p:hover{
+    color: #1CABE2;
+    transition-property: all;
+    transition-duration: 0.1s;
 }
 
 .header-2-1 ul li{
@@ -61,7 +91,6 @@ header{
 }
 
 .header-2-1 ul li:hover{
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     color: #1CABE2;
     transition-property: all;
     transition-duration: 0.1s;
