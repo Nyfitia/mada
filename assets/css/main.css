@@ -190,9 +190,17 @@ header{
     transition: 0.3s ease-out;
     transition-property: all;
     transition-duration: 0.2s;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
+.image-photo-back h1{
+    position: static;
+    display: block;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 330px;
+    text-shadow: 0px 2px 3px black;
+}
 
 .image-photo-back:hover{
     opacity: 1;
@@ -202,19 +210,11 @@ header{
     transition-duration: 0.2s;
 }
 
-.sec-image-photo-back p{
-    left: 50% ;
+.sec-image-photo-back h1{
+    color: white;
+    /* left: 50% ;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-
-.test{
-    position: fixed;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
+    transform: translate(-50%, -50%); */
 }
 
 /* PAGE IMAGE*/
@@ -232,4 +232,90 @@ header{
 .categorie-images ul li{
     padding: 20px;
     display: inline-block;
+}
+
+.categorie-images-1{
+    width: 450px;
+    text-align: center;
+    margin: 5px 10px;
+    box-shadow: 0px 8px 0px #035abc;
+    background-color: #1CABE2;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 0.1s;
+    padding: 5px;
+}
+
+.categorie-images-1:active{
+    transform: translateY(4px);
+    box-shadow: 0px 4px 0px #035abc;
+    transition-property: all;
+    transition-duration: 0.1s;
+}
+.categorie-images-2{
+    width: 450px;
+    text-align: center;
+    margin: 5px 10px;
+    box-shadow: 0px 8px 0px #035abc;
+    background-color: #1CABE2;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 0.1s;
+    padding: 5px;
+}
+
+.categorie-images-2:active{
+    transform: translateY(4px);
+    box-shadow: 0px 4px 0px #035abc;
+    transition-property: all;
+    transition-duration: 0.1s;
+}
+
+.categorie-images-1, .categorie-images-2{
+    cursor: pointer;
+}
+
+
+/* GALERIE */
+
+.sec-images-soirees{
+    width: 100%;
+}
+
+.sec-images-mada{
+    
+}
+
+.row{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.colonne{
+    box-sizing: border-box;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.colonne img{
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .colonne{
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .colonne{
+      flex: 100%;
+      max-width: 100%;
+    }
 }
