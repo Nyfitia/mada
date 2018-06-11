@@ -135,14 +135,16 @@ header{
 
 .image-petite-fille{
     background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
     width: 100%;
     height: 900px;
     background-image: url(../images/petite-fille.jpg);
-    background-position: center;
     clear: both;
 }
 
 .sec-image-petite-fille{
+    background-color: black;
     height: 900px;
 }
 
@@ -171,14 +173,15 @@ header{
 }
 
 .sec-image-photo-back{
+    width: 100%;
     height: 700px;
     overflow: hidden;
     background-color: black;
 }
 
 .image-photo-back{
-    background-attachment: fixed;
-    background-position: top center;
+    background-attachment: absolute;
+    background-position: top;
     background-repeat: no-repeat;
     width: 100%;
     height: 700px;
