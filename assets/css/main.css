@@ -28,6 +28,16 @@ li{
     list-style: none;
 }
 
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #666;
+    font-size: 20px;
+    padding-top: 13px;
+}
+
 
 
 
@@ -165,4 +175,186 @@ header{
 .boutton-actualites h1{
     letter-spacing: -1px;
     color: white;
+}
+
+
+
+.sec-image-photo-back{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.image-photo-back{
+    background-attachment: absolute;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/bache.jpg);
+    clear: both;
+    transition: 0.3s ease-out;
+    transition-property: all;
+    transition-duration: 0.2s;
+    opacity: 0.9;
+}
+
+.image-photo-back h1{
+    position: static;
+    display: block;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 330px;
+    text-shadow: 0px 2px 3px black;
+}
+
+.image-photo-back:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    transition: 0.3s ease-out;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+.sec-image-photo-back h1{
+    color: white;
+    /* left: 50% ;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); */
+}
+
+/* PAGE IMAGE*/
+
+.categorie-images{
+    width: 100%;
+    text-align: center;
+}
+
+.categorie-images ul{
+    width: 100%;
+    display: inline-block;
+}
+
+.categorie-images ul li{
+    padding: 20px;
+    display: inline-block;
+}
+
+.categorie-images-1{
+    width: 450px;
+    text-align: center;
+    margin: 5px 10px;
+    box-shadow: 0px 8px 0px #035abc;
+    background-color: #1CABE2;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 0.1s;
+    padding: 5px;
+}
+
+.categorie-images-1:active{
+    transform: translateY(4px);
+    box-shadow: 0px 4px 0px #035abc;
+    transition-property: all;
+    transition-duration: 0.1s;
+}
+.categorie-images-2{
+    width: 450px;
+    text-align: center;
+    margin: 5px 10px;
+    box-shadow: 0px 8px 0px #035abc;
+    background-color: #1CABE2;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 0.1s;
+    padding: 5px;
+}
+
+.categorie-images-2:active{
+    transform: translateY(4px);
+    box-shadow: 0px 4px 0px #035abc;
+    transition-property: all;
+    transition-duration: 0.1s;
+}
+
+.categorie-images-1, .categorie-images-2{
+    cursor: pointer;
+}
+
+
+/* GALERIE */
+
+.sec-images-soirees{
+    width: 100%;
+}
+
+.sec-images-mada{
+    
+}
+
+.row{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.colonne{
+    box-sizing: border-box;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.colonne img{
+    width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .colonne{
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .colonne{
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
+
+/* GALERIE SOIREE */
+
+.images-soirees{
+    box-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+    display: block;
+    width: 600px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.images-soirees:hover{
+    box-shadow: 5px 0px 2px black, 0px 5px 2px black, -5px 0px 2px black, 0px -5px 2px black;
+}
+
+.images-soirees-image{
+    width: 100%;
+    height: 85%;
+    background-image: url("../images/bache.jpg");
+    Background-position : center center;
+    background-size: 200%;
+}
+
+.images-soirees p{
+    font-size: 25px;
+    margin-top: 12px;
 }
